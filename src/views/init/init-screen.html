@@ -11,8 +11,8 @@ SPDX-License-Identifier: Apache-2.0
         <div style="z-index:2;width:100%" align="center">
             <!-- Style on network banner used to make it overlap the picture-logo instead of push it down. -->
             <network-banner style="position:absolute; top:0; left:0; z-index:9999"></network-banner>
-            <div style="position: absolute; top: 50%;transform: translateY(-50%);" align="center">
-                <img src="img/Opal_Name_Logo_Transparent.png" style="width:75%;height:auto">
+            <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);display: flex;align-items: center;justify-content: center;z-index: 10;" align="center">
+                <img src="img/mycarex_480.png" style="width:75%;height:auto">
             </div>
         </div>
         <div style="height: 100%">
@@ -24,7 +24,7 @@ SPDX-License-Identifier: Apache-2.0
     <div id="listInitApp" class="animate__animated animate__fadeIn ng-cloak listInitApp">
 
         <!-- PARTNERS -->
-        <div class="initScreenButtonDiv">
+        <!--<div class="initScreenButtonDiv">
             <ons-button class="shadow-2 initScreenWhiteButton" modifier="large"
                         ng-click="init.goToPartners()" var="initButton">
                 <ons-icon icon="fa-star fa-lg pull-left"
@@ -33,10 +33,10 @@ SPDX-License-Identifier: Apache-2.0
                     {{"PARTNERS"|translate}}
                 </div>
             </ons-button>
-        </div>
+        </div>-->
 
         <!-- ABOUT OPAL -->
-        <div class="initScreenButtonDiv">
+        <!--<div class="initScreenButtonDiv">
             <ons-button class="shadow-2 initScreenWhiteButton" modifier="large"
                         ng-click="init.goToAboutOpal()" var="initButton">
                 <ons-row align="center">
@@ -48,10 +48,10 @@ SPDX-License-Identifier: Apache-2.0
                     </ons-col>
                 </ons-row>
             </ons-button>
-        </div>
+        </div>-->
 
         <!-- TECHNICAL / LEGAL -->
-        <div class="initScreenButtonDiv">
+        <!--<div class="initScreenButtonDiv">
             <ons-button class="shadow-2 initScreenWhiteButton" modifier="large"
                         ng-click="init.goToTechnicalLegal()" var="initButton">
                 <i class="fa fa-info-circle fa-lg pull-left"
@@ -60,10 +60,10 @@ SPDX-License-Identifier: Apache-2.0
                     {{"TECHNICAL_LEGAL"|translate}}
                 </div>
             </ons-button>
-        </div>
+        </div>-->
 
         <!-- REGISTER OPAL -->
-        <div class="initScreenButtonDiv">
+        <!--<div class="initScreenButtonDiv">
             <ons-button class="shadow-2 initScreenWhiteButton" modifier="large"
                         ng-click="init.goToRegister()" var="initButton">
                 <i class="fa fa-user-circle fa-lg pull-left"
@@ -72,7 +72,7 @@ SPDX-License-Identifier: Apache-2.0
                     {{"REGISTER_OPAL"|translate}}
                 </div>
             </ons-button>
-        </div>
+        </div>-->
 
         <!-- SIGN IN -->
         <div class="initScreenButtonDiv">
