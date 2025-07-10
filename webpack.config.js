@@ -69,7 +69,7 @@ const config = env => {
 			client: {
 				overlay: false,
 				progress: true,
-				webSocketURL: 'wss://mycarex.shoprideon.com/ws',
+				webSocketURL: 'auto://0.0.0.0:0/ws',
 			},
 			compress: true,
 			hot: false,
