@@ -42,6 +42,12 @@
                 name: "GENERAL",
                 description: "GENERAL_DESCRIPTION"
             },
+            appointment: {
+                iconType: 'icon',
+                icon: 'fa-solid fa-calendar-check',
+                name: "GET APPOINTMENT",
+                description: "APPOINTMENT_DESCRIPTION"
+            },
             caregivers: {
                 iconType: 'icon',
                 icon: 'fa-solid fa-user',

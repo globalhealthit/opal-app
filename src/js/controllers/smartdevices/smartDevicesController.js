@@ -10,16 +10,17 @@
         .controller('SmartDevicesController', SmartDevicesController);
 
     SmartDevicesController.$inject = [
-        '$scope', '$timeout', 'Navigator',
+        '$scope', '$timeout', '$sce', 'Navigator',
     ];
 
     /* @ngInject */
-    function SmartDevicesController($scope, $timeout, Navigator)
+    function SmartDevicesController($scope, $timeout, $sce, Navigator)
     {
         let vm = this;
 
         vm.showInfo = () => Navigator.getNavigator().pushPage('./views/smartdevices/smartdevices-info.html');
         vm.goToDevice = (deviceView) => Navigator.getNavigator().pushPage(`./views/smartdevices/devices/${deviceView}`);
+        vm.rpmUrl = () => $sce.trustAsResourceUrl('https://rpm.shoprideon.com');
 
         vm.bluetoothAvailable = window.hasOwnProperty('ble');
         vm.bluetoothEnabled = false;

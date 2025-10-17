@@ -32,6 +32,13 @@
     font-weight: bolder;
     height: 100%;
 }
+
+.initScreenBlueButton {
+    background-color: #2196F3;
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 100%;
+}
 .initScreenButtonText {
     color: #757575;
     display: inline-block;
