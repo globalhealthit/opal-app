@@ -4,19 +4,23 @@ SPDX-FileCopyrightText: Copyright (C) 2023 Opal Health Informatics Group at the 
 SPDX-License-Identifier: Apache-2.0
 -->
 
-<ons-page ng-controller="SmartDevicesController as ctrl">
-    <generic-toolbar title="{{'SMART_DEVICES'|translate}}" style-class="fontSizeTitle">
+<ons-page ng-controller="AppointmentSchedulerController as ctrl">
+    <generic-toolbar title="{{'Get Appointment'|translate}}" style-class="fontSizeTitle">
         <right-content>
             <ons-toolbar-button ng-click="ctrl.showInfo()">
                 <ons-icon icon="fa-info-circle"></ons-icon>
             </ons-toolbar-button>
         </right-content>
     </generic-toolbar>
+
+    <!-- HOSPITAL NAME BAR -->
+    <top-page-banner title="ctrl.selectedHospitalToDisplay"></top-page-banner>
+
     <network-banner></network-banner>
 
-    <!-- RPM IFRAME -->
-    <div class="smartdevices-rpm-container">
-        <iframe ng-src="{{ctrl.rpmUrl()}}" title="RPM Device Portal" class="smartdevices-rpm-iframe"></iframe>
+    <!-- APPOINTMENT SCHEDULER IFRAME -->
+    <div class="appointment-scheduler-container">
+        <iframe ng-src="{{ctrl.appointmentUrl()}}" title="Appointment Scheduler" class="appointment-scheduler-iframe"></iframe>
     </div>
 
 </ons-page>

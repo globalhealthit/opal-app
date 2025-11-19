@@ -23,7 +23,7 @@ SPDX-License-Identifier: Apache-2.0
         <ons-col class="security-question--col">
 
             <!-- OPAL LOGO -->
-            <img src="./img/Opal_Name_Logo_Green_Transparent.png" class="opal-logo--large">
+            <img src="./img/mycarex_480.png" class="opal-logo--large">
 
             <!-- HOSPITAL SELECTOR -->
             <div ng-if="security.passwordReset" class="container">
@@ -47,7 +47,7 @@ SPDX-License-Identifier: Apache-2.0
                                 autocomplete="new-password">
                         </password-input>
                     </div>
-                    <button class="button button--large shadow-2 button--large-green security-question--button"
+                    <button class="button button--large shadow-2 button--large-blue security-question--button"
                         ng-disabled="security.submitting || security.tooManyAttempts"
                         ng-click="security.submitAnswer(security.answer)">
                         <span ng-if="!security.submitting">
@@ -70,7 +70,7 @@ SPDX-License-Identifier: Apache-2.0
         <h4>{{"RESET_ERROR"|translate}}</h4>
         <ons-icon icon="ion-alert-circled" size="60px"></ons-icon>
         <p class="unattended-message security-question--modal-text">{{"RETRY_RESET_MESSAGE"|translate}}</p>
-        <ons-button class="button--large-green security-question--modal-button"
+        <ons-button class="button--large-blue security-question--modal-button"
             ng-click="security.goToReset()">{{"RETRY"|translate}}</ons-button>
         <ons-button class="button--large-blue security-question--modal-button"
             ng-click="security.goToInit()">{{"HOME"|translate}}</ons-button>

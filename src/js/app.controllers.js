@@ -62,3 +62,4 @@ import "./controllers/smartdevices/smartDevicesController.js";
 import "./controllers/smartdevices/devices/etekcityScaleController.js";
 import "./controllers/smartdevices/devices/vitalTracerWatchController.js";
 import "./controllers/smartdevices/devices/xiaomiScaleController.js";
+import "./controllers/getAppointment/AppointmentSchedulerController.js";
