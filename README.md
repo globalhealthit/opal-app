@@ -57,22 +57,19 @@ This section covers installation steps to build the app's web code on your local
 
 2.  Install the app's dependencies
 
-    Add the `.npmrc` file
-
-    This project uses [AngularJS](https://angularjs.org/) which reached end of life in January 2022.
-    This project uses a long-term support version of AngularJS provided by [HeroDevs](https://www.herodevs.com/support/nes-angularjs).
-    If you have an `npm` token to retrieve this version from their registry, place the `.npmrc` file containing the credentials in the root directory.
-
-    You can also use the [last available version](https://www.npmjs.com/package/angular) of AngularJS (version 1.8.3).
-    To do so, change the value for the `angular` dependency to `angular@1.8.3` in `package.json`.
-    Also change all other auxiliary angular dependencies accessed through `neverendingsupport` to their latest default versions, as provided by npm.
-    Then, run:
-
     ```shell
     npm install
     ```
 
-    For a list of all dependencies, refer to [package.json](./package.json).
+    This project uses [AngularJS](https://angularjs.org/) which reached end of life in January 2022.
+
+    A long-term support version of AngularJS can be used instead, provided by [HeroDevs](https://www.herodevs.com/support/nes-angularjs) (paid service).
+    If you have an `npm` token to retrieve this version from their registry, place the `.npmrc` file containing the credentials in the root directory.
+
+    Then, substitute the AngularJS dependencies in `package.json` with the packages provided by HeroDevs
+    (see [their setup instructions here](https://docs.herodevs.com/angularjs/angularjs-1-8#detailed-instructions)).
+
+    For a list of all dependencies used in this project, refer to [package.json](./package.json).
 
 3.  Connect your installation to a running backend.
 
@@ -197,6 +194,14 @@ You may choose to simply execute `cordova run ios`, if you know there already ex
 
 The app includes dynamically loaded pages such as `Terms of Use`, `Service Agreement`, `About`, etc., which are retrieved from an external server. On startup, it
 downloads a configuration file for this external content based on the `externalContentFileURL` setting in `opal.config.js`. **For testing purposes**, you can include the external configuration and content files in the webpack build, allowing them to be accessed as regular local static files. Follow the instructions in [the content folder's README](./content/README.md) to use the external content samples.
+
+### Password Reset
+
+To support password reset in the Opal app, a standalone web page must be deployed,
+which redirects users from password reset emails to the right page in the app.
+
+To deploy this webpage, follow the steps related to the password reset redirect page
+in [Pushing a Webpage to Firebase](./docs/deployment/firebase-webpage-deployment.md).
 
 ## Troubleshooting
 

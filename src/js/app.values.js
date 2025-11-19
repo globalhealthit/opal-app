@@ -51,7 +51,6 @@
                 setPasswordParam: 'PASSWORD',
                 setLanguageParam: 'LANGUAGE',
                 setLanguageParamProperCase: 'Language',
-                settingsLanguageOptions: ['EN', 'FR'],
                 setFontSizeParam: 'FONTSIZE',
                 settingFontOptions: [
                     {size: 'medium', style: 'fontDescMedium', text: 'SMALL'},
@@ -113,6 +112,7 @@
                             "APT": 1, // Appointments
                             "LAB": 1, // Lab results
                             "DOC": 1, // Documents (clinical reports)
+                            "IPS": 1, // International Patient Summary
                             "TTM": 1, // Treating team messages
                             "QUE": 1, // Questionnaires
                             "CSQ": 1, // Carnet Santé Québec
@@ -149,6 +149,7 @@
                             "APT": 1,
                             "LAB": 1,
                             "DOC": 1,
+                            "IPS": 0,
                             "TTM": 1,
                             "QUE": 1,
                             "CSQ": 1,
@@ -181,6 +182,7 @@
                             "APT": 1,
                             "LAB": 1,
                             "DOC": 1,
+                            "IPS": 1,
                             "TTM": 1,
                             "QUE": 1,
                             "CSQ": 1,
@@ -213,6 +215,7 @@
                             "APT": 1,
                             "LAB": 1,
                             "DOC": 1,
+                            "IPS": 1,
                             "TTM": 1,
                             "QUE": 1,
                             "CSQ": 1,
@@ -245,6 +248,7 @@
                             "APT": 0,
                             "LAB": 0,
                             "DOC": 0,
+                            "IPS": 0,
                             "TTM": 0,
                             "QUE": 0,
                             "CSQ": 0,
