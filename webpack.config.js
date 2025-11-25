@@ -74,7 +74,7 @@ const config = env => {
 			compress: true,
 			hot: false,
 			liveReload: true,
-			allowedHosts: ["mycarex.shoprideon.com"],
+			allowedHosts: ["mycarex.gheit.co"],
 			host: 'localhost',
 			port: 9000
 		},
